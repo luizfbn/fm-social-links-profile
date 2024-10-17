@@ -1,0 +1,107 @@
+@font-face {
+	font-family: 'Inter';
+	src: url('./assets/fonts/static/Inter-Bold.ttf') format('truetype');
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Inter';
+	src: url('./assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'Inter';
+	src: url('./assets/fonts/static/Inter-Regular.ttf') format('truetype');
+	font-weight: 400;
+}
+:root {
+	--white: hsl(0, 0%, 100%);
+	--green: hsl(75, 94%, 57%);
+	--grey-700: hsl(0, 0%, 20%);
+	--grey-800: hsl(0, 0%, 12%);
+	--grey-900: hsl(0, 0%, 8%);
+}
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter', sans-serif;
+	color: var(--white);
+}
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.5rem;
+	min-height: 100vh;
+	background-color: var(--grey-900);
+}
+.card {
+	margin: 0 auto;
+	max-width: 384px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+	padding: 2.5rem;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	border-radius: 12px;
+	box-sizing: border-box;
+	background-color: var(--grey-800);
+}
+.card > figure img {
+	display: block;
+	height: 88px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.card > header {
+	text-align: center;
+}
+.card > header h1 {
+	font-size: 1.5rem;
+	line-height: 1.5;
+	font-weight: 600;
+	margin-bottom: 0.25rem;
+}
+.card > header h4 {
+	font-weight: 700;
+	color: var(--green);
+}
+.card > p {
+	font-weight: 400;
+	text-align: center;
+}
+.card > ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	width: 100%;
+}
+.card > ul li {
+	list-style: none;
+}
+.card > ul li a {
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	font-weight: 700;
+	word-break: break-all;
+	padding: 0.75rem 1.5rem;
+	border-radius: 8px;
+	background-color: var(--grey-700);
+	transition: background-color 1s ease-out;
+}
+.card > ul li a:hover,
+.card > ul li a:active,
+.card > ul li a:focus {
+	color: var(--grey-700);
+	background-color: var(--green);
+}
+.attribution {
+	font-size: 0.6875rem;
+	text-align: center;
+}
+.attribution a {
+	color: #3e52a3;
+}
