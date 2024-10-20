@@ -64,7 +64,9 @@ body {
 	font-weight: 600;
 	margin-bottom: 0.25rem;
 }
-.card > header h4 {
+.card > header h2 {
+	font-size: 0.875rem;
+	line-height: 1.5;
 	font-weight: 700;
 	color: var(--green);
 }
